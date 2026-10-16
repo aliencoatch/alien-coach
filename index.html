@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alien 柳皓威｜財務教練</title>
+<meta name="description" content="現金流整理、資產配置、家庭財務藍圖。用簡單好懂的方式，陪你把財務方向整理清楚。">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0A0A;--card:#141414;--card2:#1C1C1C;--line:#2B2B2B;--tx:#F5F5F5;--mut:#A8A8A8;--brass:#FFFFFF;--mint:#D6D6D6}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.7;-webkit-text-size-adjust:100%}
+.page{max-width:520px;margin:0 auto;padding-bottom:calc(40px + env(safe-area-inset-bottom,0))}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+/* hero */
+.hero{position:relative;aspect-ratio:2/3;max-height:112vw;overflow:hidden;background:#cfcfc8}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;display:block}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.0) 38%,rgba(10,10,10,.78) 76%,var(--bg) 100%)}
+.intro{text-align:center;padding:0 22px;margin-top:-64px;position:relative;z-index:2}
+h1{font-family:"Noto Serif TC",serif;font-weight:900;font-size:40px;line-height:1.25;margin:0;letter-spacing:2px}
+.role{color:var(--brass);font-size:16px;letter-spacing:4px;margin-top:6px}
+.tags{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:20px 0 0;padding:0;list-style:none}
+.tags li{border:1px solid #3A3A3A;background:#161616;color:var(--mint);border-radius:999px;padding:7px 18px;font-size:15px}
+.lines{margin:22px 0 0;color:var(--mut);font-size:16.5px;line-height:2}
+/* carousel */
+/* sections */
+.sec{margin:34px 22px 0}
+.rule{display:flex;align-items:center;gap:16px;color:#8A8A8A;letter-spacing:6px;font-size:14px;margin-bottom:18px}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:#2B2B2B}
+.card{display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px 18px;margin-bottom:14px}
+.card.hl{border:2px solid #fff;box-shadow:0 0 26px rgba(255,255,255,.14)}
+.ico{flex:0 0 58px;height:58px;border-radius:16px;background:var(--card2);border:1px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-size:28px}
+.card small{display:block;color:#9A9A9A;font-size:14px;letter-spacing:2px}
+.card b{display:block;font-family:"Noto Serif TC",serif;font-size:19.5px;line-height:1.4;margin:2px 0}
+.card em{display:block;font-style:normal;color:var(--mut);font-size:14.5px}
+.card .go{margin-left:auto;color:var(--mint);font-size:22px}
+.main-cta{display:block;margin:24px auto 0;max-width:340px;background:#fff;color:#0A0A0A;border-radius:14px;padding:16px 20px;font-weight:700;font-size:17px;text-align:center;box-shadow:0 0 26px rgba(255,255,255,.14)}
+.main-cta:active{transform:scale(.98)}
+.cta-sub{margin:10px 0 0;color:var(--mut);font-size:13.5px}
+.next{margin-top:30px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px 20px 22px;text-align:center}
+.next b{display:block;font-family:"Noto Serif TC",serif;font-size:21px}
+.next span{display:block;color:var(--mut);font-size:14.5px;margin-top:6px}
+.alt-links{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:16px;font-size:15px}
+.alt-links a{color:var(--mint);padding:6px 4px;border-bottom:1px solid #3A3A3A}
+.alt-links i{width:1px;height:14px;background:#3A3A3A}
+.svc li{display:flex;flex-direction:column;gap:2px;padding:16px 18px}
+.svc b{font-family:"Noto Serif TC",serif;font-size:18px}
+.svc span{color:var(--mut);font-size:14.5px}
+/* trust */
+.about{color:var(--tx);font-size:16px;line-height:1.95;text-align:center}
+.facts{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:10px}
+.facts li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 16px;font-size:15px;color:var(--tx)}
+.facts.pr li::before{content:"✓";margin-right:10px;color:#fff;font-weight:700}
+.quote{margin:14px 0 0;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.quote p{margin:0;font-size:15px;line-height:1.8}
+.quote cite{display:block;margin-top:8px;color:var(--mut);font-size:13px;font-style:normal}
+.disc{margin:18px 0 0;color:var(--mut);font-size:12.5px;line-height:1.8;text-align:center}
+/* service details */
+.sv{background:var(--card);border:1px solid var(--line);border-radius:22px;margin-bottom:14px;overflow:hidden}
+.sv[open]{border-color:#4A4A4A}
+.sv summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:20px 20px}
+.sv summary::-webkit-details-marker{display:none}
+.sv summary .t{flex:1;min-width:0}
+.sv summary b{display:block;font-family:"Noto Serif TC",serif;font-size:19px;line-height:1.4}
+.sv summary span{display:block;color:var(--mut);font-size:14.5px;margin-top:2px}
+.sv summary .chev{flex:0 0 auto;width:30px;height:30px;border-radius:50%;border:1px solid #3A3A3A;display:flex;align-items:center;justify-content:center;color:var(--mint);font-size:14px;transition:transform .2s}
+.sv[open] summary .chev{transform:rotate(180deg)}
+.sv .body{padding:0 20px 20px;border-top:1px solid var(--line)}
+.sv h3{margin:18px 0 8px;font-size:13px;letter-spacing:3px;color:#8A8A8A;font-weight:500}
+.sv ul{margin:0;padding:0;list-style:none}
+.sv li{position:relative;padding-left:16px;font-size:15px;line-height:1.8;margin-bottom:4px}
+.sv li::before{content:"";position:absolute;left:0;top:.75em;width:6px;height:6px;border-radius:50%;background:#6A6A6A}
+.sv ol{margin:0;padding:0;list-style:none;counter-reset:s}
+.sv ol li{padding-left:30px;counter-increment:s}
+.sv ol li::before{content:counter(s);width:20px;height:20px;top:.3em;background:#222;border:1px solid #3A3A3A;color:var(--mint);font-size:12px;display:flex;align-items:center;justify-content:center}
+.sv .take{margin-top:18px;background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.sv .take h3{margin-top:0}
+.sv .book{display:block;margin-top:16px;text-align:center;border:1px solid #fff;border-radius:12px;padding:12px;font-weight:700;font-size:15px}
+.sv .book:active{transform:scale(.98)}
+.svc-note{color:var(--mut);font-size:13px;text-align:center;margin:4px 0 0}
+/* gift reader */
+button.card{width:100%;font:inherit;color:inherit;text-align:left;cursor:pointer}
+.rd{position:fixed;inset:0;z-index:50;background:var(--bg);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.rd-bar{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:10px;padding:calc(10px + env(safe-area-inset-top,0)) 16px 10px;background:rgba(10,10,10,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.rd-bar span{flex:1;min-width:0;font-size:15px;color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rd-x{flex:0 0 auto;border:1px solid #3A3A3A;background:#161616;color:var(--tx);border-radius:999px;padding:7px 16px;font:inherit;font-size:14.5px;cursor:pointer}
+.doc{max-width:520px;margin:0 auto;padding:26px 22px calc(48px + env(safe-area-inset-bottom,0))}
+.doc .cover{text-align:center;padding:10px 0 6px}
+.doc .cover small{display:block;color:#8A8A8A;letter-spacing:4px;font-size:13px}
+.doc .cover h2{font-family:"Noto Serif TC",serif;font-weight:900;font-size:30px;line-height:1.4;margin:10px 0 8px}
+.doc .cover p{color:var(--mut);font-size:15px;margin:0}
+.doc .toc{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:8px}
+.doc .toc a{display:flex;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 14px;font-size:15px}
+.doc .toc a i{font-style:normal;color:#8A8A8A;font-variant-numeric:tabular-nums}
+.doc section{margin-top:40px;scroll-margin-top:72px}
+.doc .no{color:#8A8A8A;letter-spacing:3px;font-size:13px}
+.doc h3{font-family:"Noto Serif TC",serif;font-size:23px;line-height:1.4;margin:4px 0 6px}
+.doc .lead{color:var(--mut);font-size:15px;margin:0 0 16px}
+.doc p{font-size:15.5px;line-height:1.85;margin:0 0 10px}
+.doc .box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:14px 0}
+.doc .box.key{border-color:#5A5A5A}
+.doc .box h4{margin:0 0 6px;font-size:15.5px;font-weight:700}
+.doc .box p:last-child{margin-bottom:0}
+.doc ul.dot{list-style:none;margin:0;padding:0}
+.doc ul.dot li{position:relative;padding-left:16px;font-size:15.5px;line-height:1.85;margin-bottom:6px}
+.doc ul.dot li::before{content:"";position:absolute;left:0;top:.8em;width:6px;height:6px;border-radius:50%;background:#7A7A7A}
+.doc ol.step{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:10px}
+.doc ol.step li{counter-increment:s;position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px 14px 56px;font-size:15.5px;line-height:1.7}
+.doc ol.step li::before{content:counter(s);position:absolute;left:16px;top:14px;width:26px;height:26px;border-radius:50%;background:#fff;color:#0A0A0A;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+.doc ol.step b{display:block;font-size:16px}
+.doc ol.step span{display:block;color:var(--mut);font-size:14.5px}
+.doc .formula{font-family:ui-monospace,Menlo,monospace;font-size:13.5px;background:var(--card2);border-radius:10px;padding:10px 12px;margin:8px 0;line-height:1.7;color:var(--mint)}
+.cmp{display:grid;gap:12px}
+.cmp .opt{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.cmp .opt h4{margin:0 0 10px;font-family:"Noto Serif TC",serif;font-size:19px}
+.cmp dl{margin:0;display:grid;grid-template-columns:5.6em 1fr;gap:6px 10px;font-size:14.5px;line-height:1.7}
+.cmp dt{color:#8A8A8A}
+.cmp dd{margin:0}
+.sim{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+.sim th,.sim td{padding:10px 6px;border-bottom:1px solid var(--line);text-align:right}
+.sim th:first-child,.sim td:first-child{text-align:left}
+.sim th{color:#8A8A8A;font-weight:500;font-size:13px}
+.sim td small{display:block;color:#8A8A8A;font-size:12.5px}
+.sim .plus{color:#fff;font-weight:700}
+.doc .note{color:#8A8A8A;font-size:12.5px;line-height:1.8;margin-top:10px}
+.chk{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.chk label{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px;line-height:1.7;cursor:pointer}
+.chk input{flex:0 0 auto;width:18px;height:18px;margin:4px 0 0;accent-color:#fff}
+.chk.row{grid-template-columns:repeat(2,1fr)}
+.fill{display:grid;gap:10px}
+.fill label{display:block;font-size:14.5px;color:var(--mut)}
+.fill input{display:block;width:100%;margin-top:6px;background:var(--card2);border:1px solid #3A3A3A;border-radius:10px;padding:10px 12px;color:var(--tx);font:inherit;font-size:16px}
+.doc .q{margin:18px 0 8px;font-weight:700;font-size:15.5px}
+.doc .end{margin-top:36px;background:var(--card);border:1px solid #4A4A4A;border-radius:20px;padding:22px 20px;text-align:center}
+.doc .end b{display:block;font-family:"Noto Serif TC",serif;font-size:19px;line-height:1.5}
+.doc .end .main-cta{margin-top:16px}
+.doc .end .alt-links{margin-top:14px}
+.doc .fine{margin-top:22px;color:#8A8A8A;font-size:12.5px;line-height:1.8;text-align:center}
+/* gifts */
+.gl{margin:-4px 0 16px;color:var(--mut);font-size:14.5px;text-align:center}
+.card.off{opacity:.55;pointer-events:none}
+.kw{display:inline-block;border:1px solid #3A3A3A;border-radius:999px;padding:1px 10px;font-size:12.5px;color:var(--mint);margin-left:8px;letter-spacing:0}
+.card .go.tag{font-size:12.5px;color:var(--mut);border:1px solid #3A3A3A;border-radius:999px;padding:2px 10px;white-space:nowrap}
+[hidden]{display:none!important}
+.morebtn{display:block;width:100%;margin:0 0 14px;padding:14px;border-radius:16px;border:1px dashed #3A3A3A;background:transparent;color:var(--mut);font:inherit;font-size:15px;cursor:pointer}
+.morebtn:hover{color:var(--tx);border-color:#6A6A6A}
+/* social */
+.soc{display:flex;justify-content:center;gap:18px;margin:34px 0 0}
+.soc a{width:62px;height:62px;border-radius:50%;border:1px solid #2B2B2B;background:#111111;display:flex;align-items:center;justify-content:center;color:var(--mut);font-weight:700;font-size:13px}
+.soc svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8}
+footer{text-align:center;color:#8A8A8A;font-size:13px;margin:34px 22px 0;line-height:1.9}
+footer p{margin:0 0 8px}
+footer .sl{color:var(--mut);font-size:14.5px;letter-spacing:2px}
+</style>
+</head>
+<body>
+<main class="page">
+
+<header>
+ <div class="hero"><img src="hero.jpg" alt="Alien 柳皓威，財務教練" width="1000" height="1500"></div>
+ <div class="intro">
+  <h1>Alien 柳皓威</h1>
+  <div class="role">財務教練</div>
+  <ul class="tags"><li>現金流整理</li><li>資產配置</li><li>家庭財務藍圖</li></ul>
+  <p class="lines">用簡單好懂的方式<br>陪你把財務方向整理清楚</p>
+  <a class="main-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSd2IN7wxCWSZkssjkDwfzJlL8nVa7y39UHFOgfZ_DWNU-PZ_g/viewform?usp=dialog" target="_blank" rel="noopener">預約一對一財務整理</a>
+  <p class="cta-sub">填表約 1 分鐘，我會再與你聯絡</p>
+ </div>
+</header>
+
+<section class="sec" id="services">
+ <div class="rule">服務項目</div>
+ <details class="sv">
+  <summary><span class="t"><b>現金流整理</b><span>看清每月收入、支出與預備金</span></span><span class="chev" aria-hidden="true">▾</span></summary>
+  <div class="body">
+   <h3>適合你，如果</h3>
+   <ul>
+    <li>薪水入帳沒多久就不見，不知道花去哪</li>
+    <li>每個月都想存錢，但總是存不下來</li>
+    <li>卡費、貸款、分期一多，壓力越來越大</li>
+   </ul>
+   <h3>我們會一起做</h3>
+   <ol>
+    <li>盤點每月收入，以及固定、變動支出</li>
+    <li>整理現有負債、利率與還款順序</li>
+    <li>算出你需要的預備金，通常是 3–6 個月生活費</li>
+    <li>建立帳戶分流：生活、儲蓄、目標各自分開</li>
+   </ol>
+   <div class="take">
+    <h3>你會帶走</h3>
+    <ul>
+     <li>一頁看懂的每月現金流表</li>
+     <li>預備金目標與存到的時間</li>
+     <li>下個月就能開始的 3 個調整</li>
+    </ul>
+   </div>
+   <a class="book" href="https://docs.google.com/forms/d/e/1FAIpQLSd2IN7wxCWSZkssjkDwfzJlL8nVa7y39UHFOgfZ_DWNU-PZ_g/viewform?usp=dialog" target="_blank" rel="noopener">預約現金流整理</a>
+  </div>
+ </details>
+
+ <details class="sv">
+  <summary><span class="t"><b>資產配置</b><span>依目標與風險，比較不同做法</span></span><span class="chev" aria-hidden="true">▾</span></summary>
+  <div class="body">
+   <h3>適合你，如果</h3>
+   <ul>
+    <li>有一筆存款，不知道該放哪裡</li>
+    <li>已經在投資，但東買一點西買一點，沒有方向</li>
+    <li>想開始投資，又擔心自己承受不了波動</li>
+   </ul>
+   <h3>我們會一起做</h3>
+   <ol>
+    <li>釐清錢的用途：多久後要用、要用在哪</li>
+    <li>了解你能承受的波動與虧損程度</li>
+    <li>比較定期定額、單筆、保留現金等做法的優缺點</li>
+    <li>檢視現有部位是否過度集中</li>
+   </ol>
+   <div class="take">
+    <h3>你會帶走</h3>
+    <ul>
+     <li>適合自己的配置比例思考框架</li>
+     <li>不同做法的比較表與試算</li>
+     <li>定期檢視、調整的節奏</li>
+    </ul>
+   </div>
+   <a class="book" href="https://docs.google.com/forms/d/e/1FAIpQLSd2IN7wxCWSZkssjkDwfzJlL8nVa7y39UHFOgfZ_DWNU-PZ_g/viewform?usp=dialog" target="_blank" rel="noopener">預約資產配置討論</a>
+  </div>
+ </details>
+
+ <details class="sv">
+  <summary><span class="t"><b>家庭財務藍圖</b><span>排出買房、子女、退休的順序</span></span><span class="chev" aria-hidden="true">▾</span></summary>
+  <div class="body">
+   <h3>適合你，如果</h3>
+   <ul>
+    <li>準備成家、結婚，想和另一半對齊財務方向</li>
+    <li>有了小孩，開始擔心教育金與保障</li>
+    <li>想買房，或開始思考退休要準備多少</li>
+   </ul>
+   <h3>我們會一起做</h3>
+   <ol>
+    <li>列出未來 5–20 年的重大目標與時間點</li>
+    <li>估算每個目標大約需要多少錢</li>
+    <li>排出優先順序，算出每月要準備的金額</li>
+    <li>檢視家庭保障是否有缺口</li>
+   </ol>
+   <div class="take">
+    <h3>你會帶走</h3>
+    <ul>
+     <li>家庭目標時間軸</li>
+     <li>每月準備金額試算</li>
+     <li>先做什麼、後做什麼的優先清單</li>
+    </ul>
+   </div>
+   <a class="book" href="https://docs.google.com/forms/d/e/1FAIpQLSd2IN7wxCWSZkssjkDwfzJlL8nVa7y39UHFOgfZ_DWNU-PZ_g/viewform?usp=dialog" target="_blank" rel="noopener">預約家庭財務藍圖</a>
+  </div>
+ </details>
+ <p class="svc-note">點開看每個主題的內容</p>
+</section>
+
+<section class="sec" id="about" style="display:none">
+ <div class="rule">關於我</div>
+ <div id="aboutBox" class="about"></div>
+ <ul id="factList" class="facts"></ul>
+ <div id="reviewBox"></div>
+</section>
+
+<section class="sec" id="principles">
+ <div class="rule">我的原則</div>
+ <ul id="pList" class="facts pr"></ul>
+</section>
+
+<section class="sec" id="gifts">
+ <div class="rule">留言禮包</div>
+ <p class="gl" id="giftIntro">IG 貼文留言關鍵字，我會私訊你禮包。也可以直接在這裡點開閱讀。</p>
+ <div id="giftList"></div>
+ <div id="giftMore"></div>
+ <div class="next">
+  <b>想請我幫你看看？</b>
+  <span>看完禮包有疑問，或想了解自己適合哪一種，可以預約一對一。</span>
+  <a class="main-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSd2IN7wxCWSZkssjkDwfzJlL8nVa7y39UHFOgfZ_DWNU-PZ_g/viewform?usp=dialog" target="_blank" rel="noopener">預約一對一財務整理</a>
+  <div class="alt-links"><a href="https://line.me/ti/p/fEvmDZnmuc" target="_blank" rel="noopener">LINE 聊聊</a><i></i><a href="https://ig.me/m/alien_coach" target="_blank" rel="noopener">IG 私訊</a></div>
+ </div>
+</section>
+
+<nav class="soc" aria-label="社群連結">
+ <a href="https://www.instagram.com/alien_coach" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+ <a href="https://line.me/ti/p/fEvmDZnmuc" target="_blank" rel="noopener" aria-label="LINE">LINE</a>
+</nav>
+
+<footer>
+ <p class="sl">把財務方向整理清楚</p>
+ <p><b>風險提醒</b>：投資有賺有賠。本網站內容僅為觀念與試算分享，非投資建議或報酬保證，過去績效不代表未來。借貸與槓桿投資可能造成本金大幅虧損，且仍須償還借款。</p>
+ <p>© 2026 Alien Financial Coach</p>
+</footer>
+</main>
+
+<div class="rd" id="reader" hidden role="dialog" aria-modal="true" aria-labelledby="rdTitle">
+ <div class="rd-bar"><span id="rdTitle"></span><button type="button" class="rd-x" id="rdClose">關閉</button></div>
+ <div id="rdBody"></div>
+</div>
+
+<!-- ===== 禮包內容：asset-guide ===== -->
+<template id="doc-asset">
+<article class="doc">
+ <div class="cover">
+  <small>資產累積攻略</small>
+  <h2>定期定額、單筆、<br>借力單筆該怎麼選？</h2>
+  <p>一份看懂三種做法的差異、試算與風險自我檢查表</p>
+ </div>
+ <ul class="toc">
+  <li><a href="#a1"><i>01</i>三種做法一次比較</a></li>
+  <li><a href="#a2"><i>02</i>10 年試算舉例</a></li>
+  <li><a href="#a3"><i>03</i>借力前的 3 道自我檢查</a></li>
+  <li><a href="#a4"><i>04</i>我適合從哪裡開始</a></li>
+ </ul>
+
+ <section id="a1">
+  <div class="no">01</div>
+  <h3>三種做法一次比較</h3>
+  <p class="lead">沒有哪一種一定比較好，差別在你的現金流與承受力。</p>
+  <div class="cmp">
+   <div class="opt"><h4>定期定額</h4><dl>
+    <dt>做法</dt><dd>每月固定金額分批買進</dd>
+    <dt>優點</dt><dd>不用猜時機，心理壓力較小，容易養成紀律</dd>
+    <dt>主要風險</dt><dd>長期上漲時，資金進場較慢</dd>
+    <dt>適合誰</dt><dd>收入穩定、想先建立習慣的人</dd>
+    <dt>最需確認</dt><dd>能否持續扣款</dd></dl></div>
+   <div class="opt"><h4>單筆投入</h4><dl>
+    <dt>做法</dt><dd>手上有一筆錢，一次投入</dd>
+    <dt>優點</dt><dd>本金提早進場，時間較長</dd>
+    <dt>主要風險</dt><dd>進場後遇到下跌，帳面波動大</dd>
+    <dt>適合誰</dt><dd>已有閒置資金、能承受波動的人</dd>
+    <dt>最需確認</dt><dd>這筆錢是否短期會用到</dd></dl></div>
+   <div class="opt"><h4>借力單筆</h4><dl>
+    <dt>做法</dt><dd>先借一筆錢一次投入，每月還款</dd>
+    <dt>優點</dt><dd>用月付取代一次拿出大筆本金，進場更早</dd>
+    <dt>主要風險</dt><dd>不論漲跌都要還款；虧損時本金與利息壓力疊加</dd>
+    <dt>適合誰</dt><dd>收入非常穩、風險承受度高、能放滿期間的人</dd>
+    <dt>最需確認</dt><dd>每月還款是否長期撐得住</dd></dl></div>
+  </div>
+  <div class="box key"><h4>重點觀念</h4><p>時間是最大的複利，但「放大」是雙面的：借力放大的是報酬，也是波動與壓力。能不能放滿，比選哪一種更重要。</p></div>
+ </section>
+
+ <section id="a2">
+  <div class="no">02</div>
+  <h3>10 年試算舉例</h3>
+  <p class="lead">假設年化報酬 8%、每月複利；借款 10 年期、利率約 3.1%、本息攤還。這是舉例，不是預測或保證。</p>
+  <div class="box">
+   <table class="sim">
+    <thead><tr><th>情境</th><th>A 每月<br>定期定額</th><th>B 借款<br>單筆投入</th><th>B 多了</th></tr></thead>
+    <tbody>
+     <tr><td>B 借 100 萬<small>每月 9,700</small></td><td>約 177 萬</td><td>約 222 萬</td><td class="plus">+45 萬</td></tr>
+     <tr><td>B 借 200 萬<small>每月 19,400</small></td><td>約 355 萬</td><td>約 444 萬</td><td class="plus">+89 萬</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="box"><h4>怎麼看這張表？</h4><ul class="dot">
+   <li>兩種做法每月都拿出一樣的錢，差在 B 把本金提前放進市場。</li>
+   <li>數字是在「每年都有 8%」的假設下算出的，實際市場有漲有跌，路徑不會是直線。</li>
+   <li>如果前幾年遇到大跌，B 仍要照常還款，結果可能與表格完全相反。</li>
+  </ul></div>
+  <div class="box key"><h4>兩倍槓桿型商品要多留意</h4><p>追蹤「單日」2 倍報酬，每天重新平衡：漲時賺約 2 倍、跌時也虧約 2 倍，且長期報酬不等於指數的 2 倍。本表沒有以槓桿商品計算。</p></div>
+  <div class="formula">月投入 FV = 月投入 × [((1+r)^n − 1) / r]<br>單筆 FV = 本金 × (1+r)^n</div>
+ </section>
+
+ <section id="a3">
+  <div class="no">03</div>
+  <h3>借力前的 3 道自我檢查</h3>
+  <ol class="step">
+   <li><b>每月還款穩不穩？</b><span>收入能長期撐住月付，就算收入短期減少，也不會被迫中斷。</span></li>
+   <li><b>跌 50% 睡得著嗎？</b><span>想像帳面資產腰斬，月付卻一毛不少，你會不會恐慌賣出？</span></li>
+   <li><b>能放滿 10 年嗎？</b><span>中途停損賣掉，試算就不成立。這筆錢和還款期間內，有沒有可能急需用到？</span></li>
+  </ol>
+  <div class="box"><h4>先把規則寫下來</h4>
+   <div class="fill">
+    <label>每月還款上限（元）<input inputmode="numeric" placeholder="例如 10,000"></label>
+    <label>緊急預備金，至少放在投資之外（元）<input inputmode="numeric" placeholder="例如 200,000"></label>
+    <label>資產大幅下跌時，我會<input placeholder="例如 照常扣款，不賣出"></label>
+    <label>這筆錢預計放幾年，期間不動用<input inputmode="numeric" placeholder="例如 10"></label>
+   </div>
+   <p class="note">規則在市場平靜時寫，比在大跌時決定更可靠。這裡填的內容只留在你的手機畫面上，不會傳給任何人。</p>
+  </div>
+ </section>
+
+ <section id="a4">
+  <div class="no">04</div>
+  <h3>我適合從哪裡開始？</h3>
+  <ul class="chk">
+   <li><label><input type="checkbox">三題都有把握 → 可再評估借力單筆，並先設好上限與停損規則</label></li>
+   <li><label><input type="checkbox">有一題答不出來 → 先從定期定額開始，累積紀律與經驗</label></li>
+   <li><label><input type="checkbox">手上有閒置資金、短期不會用 → 評估單筆或分批投入</label></li>
+  </ul>
+  <h3 style="margin-top:30px">下一步：把規則變成你的規劃</h3>
+  <ol class="step">
+   <li><b>私訊回覆三個問題</b><span>每月可固定投入多少、跌 30%〜50% 的反應、預計放多久</span></li>
+   <li><b>檢視現況與風險</b><span>對照你的收入、預備金與還款能力，確認哪一種做法撐得住</span></li>
+   <li><b>討論適合的規劃方向</b><span>依你的情況比較定期定額、單筆與是否借力，再決定要不要往前</span></li>
+  </ol>
+ </section>
+
+ <div class="end">
+  <b>想知道自己適合哪一種？</b>
+  <a class="main-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSd2IN7wxCWSZkssjkDwfzJlL8nVa7y39UHFOgfZ_DWNU-PZ_g/viewform?usp=dialog" target="_blank" rel="noopener">預約一對一財務整理</a>
+  <div class="alt-links"><a href="https://ig.me/m/alien_coach" target="_blank" rel="noopener">IG 私訊</a><i></i><a href="https://line.me/ti/p/fEvmDZnmuc" target="_blank" rel="noopener">LINE 聊聊</a></div>
+ </div>
+ <p class="fine">風險提醒：投資有賺有賠。借貸與槓桿投資可能造成本金大幅虧損，且仍須償還借款。過去績效不代表未來，本內容不構成任何投資建議或報酬保證。@alien_coach</p>
+</article>
+</template>
+
+<!-- ===== 禮包內容：mileage-guide ===== -->
+<template id="doc-mileage">
+<article class="doc">
+ <div class="cover">
+  <small>新手里程懶人包</small>
+  <h2>怎麼累積、怎麼兌換，<br>聰明出國</h2>
+  <p>一次搞懂里程的價值、累積方式與兌換時機</p>
+ </div>
+ <ul class="toc">
+  <li><a href="#m1"><i>01</i>里程到底值多少</a></li>
+  <li><a href="#m2"><i>02</i>怎麼累積里程最聰明</a></li>
+  <li><a href="#m3"><i>03</i>什麼時候換機票最好</a></li>
+  <li><a href="#m4"><i>04</i>新手規劃 4 步驟</a></li>
+  <li><a href="#m5"><i>05</i>我的里程規劃自我檢查</a></li>
+ </ul>
+
+ <section id="m1">
+  <div class="no">01</div>
+  <h3>里程到底值多少？</h3>
+  <p class="lead">很多人知道里程可以換免費機票，卻不知道怎麼累積、怎麼換才划算。掌握三個重點，讓每一哩都更有價值。</p>
+  <div class="box"><h4>同樣的里程，價值可能差很多</h4><p>換不同艙等、不同航線，所需里程與機票價格都不同。</p>
+   <ul class="dot"><li>經濟艙：需要的里程較少</li><li>商務艙：需要的里程較多，但有機會換到更高價值的機票</li></ul></div>
+  <div class="box key"><h4>小技巧：算出每哩價值</h4>
+   <div class="formula">每哩價值 =（現金票價 − 兌換稅費及附加費）÷ 所需里程</div>
+   <p>不要只看需要多少里程，也要比較原本的機票價格。</p></div>
+ </section>
+
+ <section id="m2">
+  <div class="no">02</div>
+  <h3>怎麼累積里程最聰明？</h3>
+  <p class="lead">不用刻意增加消費，也能透過日常生活慢慢累積。</p>
+  <div class="box"><ul class="dot">
+   <li><b>信用卡回饋</b>：選擇符合消費習慣的里程卡</li>
+   <li><b>日常消費</b>：餐飲、購物、交通等符合資格的支出</li>
+   <li><b>航空會員</b>：搭機累積航空公司里程</li>
+   <li><b>合作通路</b>：透過指定平台與活動累積額外回饋</li>
+  </ul></div>
+  <div class="box key"><h4>小技巧</h4><p>把原本就要花的錢轉成里程，而不是為了賺里程增加消費。記得確認年費、回饋上限及排除項目。</p></div>
+ </section>
+
+ <section id="m3">
+  <div class="no">03</div>
+  <h3>什麼時候換機票最好？</h3>
+  <p class="lead">有里程，不代表想飛哪天就能換到。熱門假期、熱門航線及商務艙，酬賓機位可能很快被換完。</p>
+  <div class="box"><ul class="dot">
+   <li><b>提早規劃</b>：熱門航線可提前 6〜12 個月開始關注</li>
+   <li><b>確認機位</b>：先查詢是否有可兌換的酬賓座位</li>
+   <li><b>彈性日期</b>：避開熱門假期，增加兌換機會</li>
+   <li><b>留意期限</b>：不同航空計畫的里程效期可能不同</li>
+  </ul></div>
+  <div class="box key"><h4>小技巧</h4><p>先確認酬賓機位，再安排住宿與其他行程，降低換不到票的風險。</p></div>
+ </section>
+
+ <section id="m4">
+  <div class="no">04</div>
+  <h3>新手里程規劃 4 步驟</h3>
+  <ol class="step">
+   <li><b>確認自己每月固定消費金額</b></li>
+   <li><b>選擇適合的里程信用卡</b></li>
+   <li><b>設定想兌換的航線與艙等</b></li>
+   <li><b>提早累積、定期查詢酬賓機位</b></li>
+  </ol>
+  <div class="box key"><h4>最後提醒</h4><p>真正會玩里程的人，不是帳戶有幾十萬、幾百萬哩，而是懂得如何累積、如何兌換，以及什麼時候使用。讓原本的消費創造更多價值，才是聰明累積里程的關鍵。</p></div>
+ </section>
+
+ <section id="m5">
+  <div class="no">05</div>
+  <h3>我的里程規劃自我檢查</h3>
+  <p class="lead">花 1 分鐘勾一勾，看看自己現在在哪個階段。</p>
+  <p class="q">1　我每月固定消費大約</p>
+  <ul class="chk row">
+   <li><label><input type="radio" name="m-spend">1 萬以下</label></li>
+   <li><label><input type="radio" name="m-spend">1〜3 萬</label></li>
+   <li><label><input type="radio" name="m-spend">3〜5 萬</label></li>
+   <li><label><input type="radio" name="m-spend">5 萬以上</label></li>
+  </ul>
+  <p class="q">2　我想兌換的航線與艙等</p>
+  <div class="fill"><label>航線<input placeholder="例如 台北 → 東京"></label></div>
+  <ul class="chk row" style="margin-top:10px">
+   <li><label><input type="radio" name="m-cls">經濟艙</label></li>
+   <li><label><input type="radio" name="m-cls">商務艙</label></li>
+  </ul>
+  <p class="q">3　我打算多久前開始規劃</p>
+  <ul class="chk row">
+   <li><label><input type="radio" name="m-lead">3 個月內</label></li>
+   <li><label><input type="radio" name="m-lead">6 個月</label></li>
+   <li><label><input type="radio" name="m-lead">12 個月</label></li>
+  </ul>
+  <p class="q">4　我已確認過</p>
+  <ul class="chk">
+   <li><label><input type="checkbox">里程卡的年費、回饋上限與排除項目</label></li>
+   <li><label><input type="checkbox">想換的航線有沒有酬賓機位</label></li>
+  </ul>
+ </section>
+
+ <div class="end">
+  <b>想把旅遊預算和每月現金流<br>一起排進計畫？</b>
+  <a class="main-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSd2IN7wxCWSZkssjkDwfzJlL8nVa7y39UHFOgfZ_DWNU-PZ_g/viewform?usp=dialog" target="_blank" rel="noopener">預約一對一財務整理</a>
+  <div class="alt-links"><a href="https://ig.me/m/alien_coach" target="_blank" rel="noopener">IG 私訊</a><i></i><a href="https://line.me/ti/p/fEvmDZnmuc" target="_blank" rel="noopener">LINE 聊聊</a></div>
+ </div>
+ <p class="fine">本內容僅供一般資訊參考，非投資建議。實際回饋、兌換標準、稅費及機位，以各銀行與航空公司最新公告為準。@alien_coach</p>
+</article>
+</template>
+
+<script>
+(function(){
+ /* ===== 留言禮包清單：新增禮包，只要在這裡加一行 =====
+    title 名稱 / kw 留言關鍵字 / desc 說明 / icon 圖示 / url 檔名或連結 / tag 類型
+    date 上架日（未到不顯示，可預告）/ expire 下架日（含當天，過了自動隱藏，留空＝不下架）
+    規則：
+    1. 預設只顯示最新 SHOW_LATEST 個，其餘收進「查看更多禮包」
+    2. 網址帶 ?gift=關鍵字 時，只置頂顯示該禮包，其他收起
+    3. 超過下架日自動隱藏 */
+ var SHOW_LATEST=3;
+ var GIFTS=[
+  {title:"新手里程懶人包",kw:"里程",desc:"怎麼累積、怎麼兌換，一次搞懂",icon:"✈️",url:"mileage-guide.pdf",doc:"doc-mileage",tag:"PDF",date:"2026-10-16",expire:"2027-01-16"},
+  {title:"資產累積攻略",kw:"配置",desc:"定期定額、單筆、借力，一份看懂",icon:"📘",url:"asset-guide.pdf",doc:"doc-asset",tag:"PDF",date:"2026-10-16",expire:"2027-04-16"}
+ ];
+ function pickGifts(list,today,kw){
+  var live=list.filter(function(g){return (g.url||g.doc)&&(!g.expire||g.expire>=today)&&(!g.date||g.date<=today)});
+  live.sort(function(a,b){return (b.date||'').localeCompare(a.date||'')});
+  var k=(kw||'').trim().toLowerCase(),pin=null;
+  if(k){for(var i=0;i<live.length;i++){if((live[i].kw||'').toLowerCase()===k){pin=live[i];break}}}
+  if(pin){return {shown:[pin],hidden:live.filter(function(g){return g!==pin}),pinned:true}}
+  return {shown:live.slice(0,SHOW_LATEST),hidden:live.slice(SHOW_LATEST),pinned:false};
+ }
+ function esc(x){return String(x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+ /* ===== 信任區塊：只填真實、可證明的內容；留空的欄位不會顯示 =====
+    intro 自我介紹一段話 / facts 資歷與成果（例如「從事財務規劃 ＿ 年」）/ reviews 客戶回饋（需客戶同意）/ disclosure 所屬公司、登錄與收費揭露 */
+ var PROFILE={
+  intro:"",
+  facts:[],
+  reviews:[],   /* 格式：{text:"回饋內容",who:"王先生，40 歲"} */
+  disclosure:""
+ };
+ var PRINCIPLES=[
+  "不保證任何報酬，也不做績效承諾",
+  "網站與私訊只分享觀念與試算，不直接推薦特定標的"
+ ];
+ (function(){
+  var about=document.getElementById('about'),has=false;
+  if(PROFILE.intro){document.getElementById('aboutBox').textContent=PROFILE.intro;has=true}
+  var fl=document.getElementById('factList');
+  PROFILE.facts.forEach(function(t){var li=document.createElement('li');li.textContent=t;fl.appendChild(li);has=true});
+  var rb=document.getElementById('reviewBox');
+  PROFILE.reviews.forEach(function(r){var q=document.createElement('blockquote');q.className='quote';q.innerHTML='<p>'+esc(r.text)+'</p><cite>'+esc(r.who||'')+'</cite>';rb.appendChild(q);has=true});
+  if(PROFILE.disclosure){var d=document.createElement('p');d.className='disc';d.textContent=PROFILE.disclosure;rb.appendChild(d);has=true}
+  if(has)about.style.display='';
+  var pl=document.getElementById('pList');
+  PRINCIPLES.forEach(function(t){var li=document.createElement('li');li.textContent=t;pl.appendChild(li)});
+ })();
+ /* ===== 禮包閱讀器：卡片點開直接在頁面內閱讀 ===== */
+ var rd=document.getElementById('reader'),rdBody=document.getElementById('rdBody'),rdTitle=document.getElementById('rdTitle'),lastBtn=null,pushed=false;
+ function openDoc(g){
+  var t=document.getElementById(g.doc);if(!t)return;
+  lastBtn=document.activeElement;
+  rdBody.innerHTML='';rdBody.appendChild(t.content.cloneNode(true));
+  rdTitle.textContent=g.title;
+  rdBody.querySelectorAll('.toc a').forEach(function(a){a.onclick=function(e){e.preventDefault();var x=rdBody.querySelector(a.getAttribute('href'));if(x)x.scrollIntoView({behavior:'smooth',block:'start'})}});
+  rd.hidden=false;rd.scrollTop=0;document.body.style.overflow='hidden';
+  try{history.pushState({rd:1},'');pushed=true}catch(e){pushed=false}
+  document.getElementById('rdClose').focus();
+ }
+ function hideDoc(){if(rd.hidden)return;rd.hidden=true;document.body.style.overflow='';if(lastBtn&&lastBtn.focus)lastBtn.focus()}
+ function closeDoc(){if(rd.hidden)return;if(pushed){pushed=false;try{history.back();return}catch(e){}}hideDoc()}
+ document.getElementById('rdClose').onclick=closeDoc;
+ window.addEventListener('popstate',function(){pushed=false;hideDoc()});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeDoc()});
+ function giftCard(g,hl){
+  var el;
+  if(g.doc&&document.getElementById(g.doc)){el=document.createElement('button');el.type='button';el.onclick=function(){openDoc(g)}}
+  else{el=document.createElement('a');el.href=g.url;el.target='_blank';el.rel='noopener'}
+  el.className='card'+(hl?' hl':'');
+  el.innerHTML='<span class="ico">'+esc(g.icon||'🎁')+'</span><span><small>'+(g.kw?'留言「'+esc(g.kw)+'」':'留言禮包')+'</small><b>'+esc(g.title)+'</b><em>'+esc(g.desc||'')+'</em></span><span class="go">›</span>';
+  return el;
+ }
+ (function(){
+  var now=new Date(),p=function(n){return ('0'+n).slice(-2)},today=now.getFullYear()+'-'+p(now.getMonth()+1)+'-'+p(now.getDate());
+  var qs='';try{qs=new URLSearchParams(location.search).get('gift')||''}catch(e){}
+  var r=pickGifts(GIFTS,today,qs),sec=document.getElementById('gifts'),gl=document.getElementById('giftList'),gm=document.getElementById('giftMore');
+  if(!r.shown.length){sec.style.display='none';return}
+  r.shown.forEach(function(g){gl.appendChild(giftCard(g,r.pinned))});
+  if(r.pinned){document.getElementById('giftIntro').textContent='你要的禮包在這裡，點一下就能直接閱讀。'}
+  if(r.hidden.length){
+   var btn=document.createElement('button'),box=document.createElement('div'),n=r.hidden.length;
+   btn.type='button';btn.className='morebtn';btn.textContent='查看更多禮包（'+n+'）';box.hidden=true;
+   r.hidden.forEach(function(g){box.appendChild(giftCard(g,false))});
+   btn.onclick=function(){box.hidden=!box.hidden;btn.textContent=box.hidden?'查看更多禮包（'+n+'）':'收合'};
+   gm.appendChild(btn);gm.appendChild(box);
+  }
+  if(r.pinned&&sec.scrollIntoView){setTimeout(function(){sec.scrollIntoView({behavior:'smooth',block:'start'})},300)}
+  if(r.pinned&&r.shown[0].doc){setTimeout(function(){openDoc(r.shown[0])},450)}
+ })();
+
+})();
+</script>
+</body>
+</html>

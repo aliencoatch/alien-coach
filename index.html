@@ -518,23 +518,23 @@ footer .sl{color:var(--mut);font-size:14.5px;letter-spacing:2px}
 <script>
 (function(){
  /* ===== 留言禮包清單：新增禮包，只要在這裡加一行 =====
-    title 名稱 / kw 留言關鍵字 / desc 說明 / icon 圖示 / url 檔名或連結 / tag 類型
+    title 名稱 / kw 留言關鍵字 / id 英文代號（私訊連結用）/ desc 說明 / icon 圖示 / url 檔名或連結 / tag 類型
     date 上架日（未到不顯示，可預告）/ expire 下架日（含當天，過了自動隱藏，留空＝不下架）
     規則：
     1. 預設只顯示最新 SHOW_LATEST 個，其餘收進「查看更多禮包」
-    2. 網址帶 ?gift=關鍵字 時，只置頂顯示該禮包，其他收起
+    2. 網址帶 ?gift=關鍵字（或英文 id，IG 私訊建議用英文）時，直接打開該禮包；網頁型禮包會直接跳轉
     3. 超過下架日自動隱藏 */
  var SHOW_LATEST=3;
  var GIFTS=[
-  {title:"新手里程懶人包",kw:"里程",desc:"怎麼累積、怎麼兌換，一次搞懂",icon:"✈️",url:"mileage-guide.pdf",doc:"doc-mileage",tag:"PDF",date:"2026-10-16",expire:"2027-01-16"},
-  {title:"資產累積攻略",kw:"配置",desc:"定期定額、單筆、借力，一份看懂",icon:"📘",url:"asset-guide.pdf",doc:"doc-asset",tag:"PDF",date:"2026-10-16",expire:"2027-04-16"},
-  {title:"資產活化懶人包",kw:"活化",desc:"房子漲了不賣，也能用嗎？增貸試算一頁看懂",icon:"🏠",url:"asset-activation.html",tag:"網頁",date:"2026-11-12",expire:""}
+  {title:"新手里程懶人包",kw:"里程",id:"mileage",desc:"怎麼累積、怎麼兌換，一次搞懂",icon:"✈️",url:"mileage-guide.pdf",doc:"doc-mileage",tag:"PDF",date:"2026-10-16",expire:"2027-01-16"},
+  {title:"資產累積攻略",kw:"配置",id:"asset",desc:"定期定額、單筆、借力，一份看懂",icon:"📘",url:"asset-guide.pdf",doc:"doc-asset",tag:"PDF",date:"2026-10-16",expire:"2027-04-16"},
+  {title:"資產活化懶人包",kw:"活化",id:"activate",desc:"房子漲了不賣，也能用嗎？增貸試算一頁看懂",icon:"🏠",url:"asset-activation.html",tag:"網頁",date:"2026-11-12",expire:""}
  ];
  function pickGifts(list,today,kw){
   var live=list.filter(function(g){return (g.url||g.doc)&&(!g.expire||g.expire>=today)&&(!g.date||g.date<=today)});
   live.sort(function(a,b){return (b.date||'').localeCompare(a.date||'')});
   var k=(kw||'').trim().toLowerCase(),pin=null;
-  if(k){for(var i=0;i<live.length;i++){if((live[i].kw||'').toLowerCase()===k){pin=live[i];break}}}
+  if(k){for(var i=0;i<live.length;i++){if((live[i].kw||'').toLowerCase()===k||(live[i].id||'').toLowerCase()===k){pin=live[i];break}}}
   if(pin){return {shown:[pin],hidden:live.filter(function(g){return g!==pin}),pinned:true}}
   return {shown:live.slice(0,SHOW_LATEST),hidden:live.slice(SHOW_LATEST),pinned:false};
  }
@@ -604,6 +604,7 @@ footer .sl{color:var(--mut);font-size:14.5px;letter-spacing:2px}
   }
   if(r.pinned&&sec.scrollIntoView){setTimeout(function(){sec.scrollIntoView({behavior:'smooth',block:'start'})},300)}
   if(r.pinned&&r.shown[0].doc){setTimeout(function(){openDoc(r.shown[0])},450)}
+  else if(r.pinned&&/\.html?$/i.test(r.shown[0].url||'')){location.replace(r.shown[0].url)}
  })();
 
 })();

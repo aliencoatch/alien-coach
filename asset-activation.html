@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>資產活化懶人包｜Alien 柳皓威</title>
+<meta name="description" content="房子漲了 700 萬，不賣也能用嗎？一頁看懂資產活化：重新鑑價、增貸試算、成本與現金流、自我檢測。">
+<meta name="theme-color" content="#0A0A0A">
+<meta property="og:title" content="房子漲了 700 萬，不賣，也能用嗎？">
+<meta property="og:description" content="資產活化懶人包：一頁看懂增貸試算、成本與風險。">
+<meta property="og:image" content="https://aliencoatch.github.io/alien-coach/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0A0A;--card:#141414;--card2:#1C1C1C;--line:#2B2B2B;--tx:#F5F5F5;--mut:#A8A8A8;--dim:#8A8A8A;--mint:#D6D6D6}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.7;-webkit-text-size-adjust:100%}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.page{max-width:520px;margin:0 auto;padding:0 22px calc(110px + env(safe-area-inset-bottom,0))}
+.serif{font-family:"Noto Serif TC",serif}
+
+/* top bar */
+.top{display:flex;justify-content:space-between;align-items:center;padding:calc(14px + env(safe-area-inset-top,0)) 0 0;font-size:13.5px;color:var(--dim)}
+.top a{color:var(--mut);border-bottom:1px solid #3A3A3A;padding-bottom:1px}
+
+/* hero */
+.hero{text-align:center;padding:44px 0 8px}
+.kicker{display:inline-block;border:1px solid #3A3A3A;border-radius:999px;padding:4px 14px;font-size:13px;letter-spacing:3px;color:var(--mint)}
+.hero h1{font-family:"Noto Serif TC",serif;font-weight:900;font-size:34px;line-height:1.4;margin:18px 0 0;letter-spacing:1px}
+.growth{display:flex;align-items:center;justify-content:center;gap:14px;margin:30px 0 0}
+.growth .v{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 16px;min-width:116px}
+.growth .v small{display:block;color:var(--dim);font-size:12.5px;letter-spacing:2px}
+.growth .v b{font-family:"Noto Serif TC",serif;font-size:24px;font-variant-numeric:tabular-nums}
+.growth .v.now{border:2px solid #fff;box-shadow:0 0 26px rgba(255,255,255,.14)}
+.growth .arr{color:var(--dim);font-size:22px}
+.hero p{color:var(--mut);font-size:16px;line-height:1.95;margin:26px 0 0;text-wrap:balance}
+.lead,.quote{text-wrap:balance}
+.hero p b{color:var(--tx)}
+.jump{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:26px 0 0;padding:0;list-style:none}
+.jump a{display:block;border:1px solid #3A3A3A;background:#161616;border-radius:999px;padding:6px 14px;font-size:14px;color:var(--mint)}
+
+/* sections */
+section{margin-top:64px;scroll-margin-top:24px}
+.no{color:var(--dim);letter-spacing:4px;font-size:13px}
+h2{font-family:"Noto Serif TC",serif;font-size:26px;line-height:1.4;margin:4px 0 6px}
+.lead{color:var(--mut);font-size:15.5px;margin:0 0 18px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin:14px 0}
+.box.key{border-color:#5A5A5A}
+.box h3{margin:0 0 6px;font-size:16px}
+.box p{margin:0;font-size:15.5px;line-height:1.85}
+.note{color:var(--dim);font-size:12.5px;line-height:1.8;margin:10px 0 0}
+
+/* steps */
+.flow{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.flow li{counter-increment:s;position:relative;padding:0 0 22px 58px}
+.flow li:last-child{padding-bottom:0}
+.flow li::before{content:"0" counter(s);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:#fff;color:#0A0A0A;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+.flow li:not(:last-child)::after{content:"";position:absolute;left:19.5px;top:44px;bottom:4px;width:1px;background:#3A3A3A}
+.flow b{display:block;font-family:"Noto Serif TC",serif;font-size:18.5px;line-height:1.5;padding-top:6px}
+.flow span{display:block;color:var(--mut);font-size:15px}
+
+/* calc */
+.calc{display:grid;gap:0}
+.calc .r{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15.5px;font-variant-numeric:tabular-nums}
+.calc .r span{color:var(--mut)}
+.calc .r.total{border-bottom:0;padding-top:16px}
+.calc .r.total span{color:var(--tx);font-weight:700}
+.calc .r.total b{font-family:"Noto Serif TC",serif;font-size:28px}
+.try{margin-top:16px;border-top:1px dashed #3A3A3A;padding-top:16px}
+.try summary{cursor:pointer;color:var(--mint);font-size:15px;list-style:none}
+.try summary::-webkit-details-marker{display:none}
+.try summary::after{content:" ▾";color:var(--dim)}
+.try[open] summary::after{content:" ▴"}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.fields label{display:block;font-size:13.5px;color:var(--mut)}
+.fields input{display:block;width:100%;margin-top:6px;background:var(--card2);border:1px solid #3A3A3A;border-radius:10px;padding:10px 12px;color:var(--tx);font:inherit;font-size:16px;font-variant-numeric:tabular-nums}
+
+/* cost vs cash */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.vs .c{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px}
+.vs .c small{display:block;color:var(--dim);font-size:13px;line-height:1.5}
+.vs .c b{display:block;font-family:"Noto Serif TC",serif;font-size:28px;margin:6px 0 2px;font-variant-numeric:tabular-nums}
+.vs .c em{font-style:normal;color:var(--mut);font-size:13.5px}
+.vs .c.hyp{border-style:dashed}
+.net{display:flex;justify-content:space-between;align-items:baseline;background:var(--card2);border-radius:14px;padding:14px 16px;margin-top:10px;font-variant-numeric:tabular-nums}
+.net span{color:var(--mut);font-size:15px}
+.net b{font-family:"Noto Serif TC",serif;font-size:22px}
+.quote{text-align:center;margin:26px 0 0;font-family:"Noto Serif TC",serif;font-size:19.5px;line-height:1.7}
+.quote em{font-style:normal;border-bottom:2px solid #fff}
+
+/* checklist */
+.chk{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.chk label{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 15px;font-size:15.5px;line-height:1.7;cursor:pointer;transition:border-color .15s}
+.chk input{flex:0 0 auto;width:19px;height:19px;margin:4px 0 0;accent-color:#fff}
+.chk label:has(input:checked){border-color:#8A8A8A}
+.meter{margin-top:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.dots{display:flex;gap:6px}
+.dots i{flex:1;height:6px;border-radius:3px;background:#2B2B2B;transition:background .2s}
+.dots i.on{background:#fff}
+.meter p{margin:10px 0 0;font-size:15px;color:var(--mut)}
+.meter p b{color:var(--tx)}
+
+/* reminders */
+.warn{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.warn li{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 16px;font-size:15.5px;line-height:1.7}
+.warn li i{flex:0 0 28px;height:28px;border-radius:50%;border:1px solid #5A5A5A;display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:700;font-size:14px}
+
+/* end */
+.end{margin-top:64px;background:var(--card);border:1px solid #4A4A4A;border-radius:22px;padding:28px 20px 24px;text-align:center}
+.end b{display:block;font-family:"Noto Serif TC",serif;font-size:22px;line-height:1.5}
+.end > span{display:block;color:var(--mut);font-size:14.5px;margin-top:6px}
+.main-cta{display:block;margin:20px auto 0;max-width:340px;background:#fff;color:#0A0A0A;border-radius:14px;padding:16px 20px;font-weight:700;font-size:17px;text-align:center;box-shadow:0 0 26px rgba(255,255,255,.14)}
+.main-cta:active{transform:scale(.98)}
+.alt-links{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:16px;font-size:15px}
+.alt-links a{color:var(--mint);padding:6px 4px;border-bottom:1px solid #3A3A3A}
+.alt-links i{width:1px;height:14px;background:#3A3A3A}
+footer{text-align:center;color:var(--dim);font-size:12.5px;line-height:1.9;margin-top:34px}
+footer a{border-bottom:1px solid #3A3A3A}
+
+/* sticky cta */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:10;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0));background:linear-gradient(180deg,rgba(10,10,10,0),rgba(10,10,10,.94) 30%);transition:transform .25s,opacity .25s}
+.sticky.hide{transform:translateY(110%);opacity:0}
+.sticky a{display:block;max-width:476px;margin:0 auto;background:#fff;color:#0A0A0A;border-radius:14px;padding:14px;font-weight:700;font-size:16px;text-align:center}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="page">
+
+<div class="top"><span>留言禮包｜資產活化懶人包</span><a href="./">Alien 財務教練</a></div>
+
+<header class="hero">
+ <span class="kicker">資產活化</span>
+ <h1>房子漲了 700 萬，<br>不賣，也能用嗎？</h1>
+ <div class="growth" aria-label="房價從 800 萬漲到 1500 萬">
+  <div class="v"><small>當初</small><b>800萬</b></div>
+  <span class="arr" aria-hidden="true">→</span>
+  <div class="v now"><small>現在</small><b>1,500萬</b></div>
+ </div>
+ <p>很多人只買不賣。<br>但如果不賣，<b>這筆增值能不能變成可以運用的資金？</b></p>
+ <ul class="jump">
+  <li><a href="#what">怎麼做</a></li>
+  <li><a href="#how-much">能多出多少</a></li>
+  <li><a href="#worth">划算嗎</a></li>
+  <li><a href="#fit">你適合嗎</a></li>
+ </ul>
+</header>
+
+<section id="what">
+ <div class="no">01</div>
+ <h2>什麼是資產活化</h2>
+ <p class="lead">不賣房、不搬家，把增值的部分轉成可運用資金。</p>
+ <ol class="flow">
+  <li><b>重新鑑價</b><span>銀行依現在市價重新估值</span></li>
+  <li><b>重新規劃貸款</b><span>透過增貸或轉貸取得新額度</span></li>
+  <li><b>釋出可運用資金</b><span>新額度扣掉原房貸，就是能動用的錢</span></li>
+ </ol>
+</section>
+
+<section id="how-much">
+ <div class="no">02</div>
+ <h2>能多出多少錢</h2>
+ <p class="lead">試算一下。</p>
+ <div class="box">
+  <div class="calc">
+   <div class="r"><span>房屋重新鑑價</span><b><output id="oV">1,500</output> 萬</b></div>
+   <div class="r"><span>× 假設貸款成數</span><b><output id="oR">70</output>%</b></div>
+   <div class="r"><span>＝ 貸款額度</span><b><output id="oL">1,050</output> 萬</b></div>
+   <div class="r"><span>－ 原房貸餘額</span><b><output id="oB">300</output> 萬</b></div>
+   <div class="r total"><span>可運用資金</span><b>約 <output id="oF">750</output> 萬</b></div>
+  </div>
+  <details class="try">
+   <summary>換成你家的數字算算看</summary>
+   <div class="fields">
+    <label>現在市價（萬）<input id="iV" type="number" inputmode="decimal" min="0" value="1500"></label>
+    <label>貸款成數（%）<input id="iR" type="number" inputmode="decimal" min="0" max="100" value="70"></label>
+    <label>原房貸餘額（萬）<input id="iB" type="number" inputmode="decimal" min="0" value="300"></label>
+    <label>年利率（%）<input id="iI" type="number" inputmode="decimal" min="0" step="0.1" value="3"></label>
+   </div>
+   <p class="note">數字只在你的手機畫面上計算，不會傳給任何人。</p>
+  </details>
+ </div>
+ <p class="note">實際額度依收入、信用、原有貸款、房屋條件及銀行審核而定。</p>
+</section>
+
+<section id="worth">
+ <div class="no">03</div>
+ <h2>借出來划算嗎</h2>
+ <p class="lead">成本 vs 現金流</p>
+ <div class="vs">
+  <div class="c"><small>資金成本<br>年息約 <output id="oI">3</output>%</small><b><output id="oC">22.5</output>萬</b><em>每月約 <output id="oM">18,750</output> 元</em></div>
+  <div class="c hyp"><small>假設年現金流<br>約 10%｜假設情境</small><b><output id="oY">75</output>萬</b><em>非保證報酬</em></div>
+ </div>
+ <div class="net"><span>扣除成本後／年</span><b>約 <output id="oN">52.5</output> 萬</b></div>
+ <p class="note">每月金額為只繳利息的概算；本息攤還的月付會更高。現金流為假設情境，非保證報酬；實際報酬可能較低甚至虧損，利率也可能調升。</p>
+ <p class="quote">真正該問的不是「要不要借錢」，<br>而是<em>「借出來要拿來做什麼」</em>。</p>
+</section>
+
+<section id="fit">
+ <div class="no">04</div>
+ <h2>你適合嗎？</h2>
+ <p class="lead">30 秒自我檢測，符合 3 項以上，值得進一步評估。</p>
+ <ul class="chk" id="chk">
+  <li><label><input type="checkbox">房貸已還一段時間，剩餘不多</label></li>
+  <li><label><input type="checkbox">房屋所在區域近年明顯增值</label></li>
+  <li><label><input type="checkbox">收入穩定，每月還款沒有壓力</label></li>
+  <li><label><input type="checkbox">信用紀錄良好，沒有遲繳</label></li>
+  <li><label><input type="checkbox">資金有明確、可評估風險的用途</label></li>
+ </ul>
+ <div class="meter" aria-live="polite">
+  <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+  <p id="chkOut">勾一勾，看看你符合幾項。</p>
+ </div>
+</section>
+
+<section id="before">
+ <div class="no">05</div>
+ <h2>開始之前，先記住 3 件事</h2>
+ <ul class="warn">
+  <li><i>1</i><span>增貸會提高每月還款與總負債</span></li>
+  <li><i>2</i><span>投資報酬不保證，利率也可能上升</span></li>
+  <li><i>3</i><span>保留緊急預備金，別把房子押在高風險標的</span></li>
+ </ul>
+</section>
+
+<div class="end" id="cta">
+ <b>想知道你的房子<br>有沒有活化空間？</b>
+ <span>IG 私訊「活化」，免費做初步試算</span>
+ <a class="main-cta" href="https://ig.me/m/alien_coach" target="_blank" rel="noopener">IG 私訊「活化」</a>
+ <div class="alt-links"><a href="https://line.me/ti/p/fEvmDZnmuc" target="_blank" rel="noopener">LINE 聊聊</a><i></i><a href="https://docs.google.com/forms/d/e/1FAIpQLSd2IN7wxCWSZkssjkDwfzJlL8nVa7y39UHFOgfZ_DWNU-PZ_g/viewform?usp=dialog" target="_blank" rel="noopener">預約一對一</a></div>
+</div>
+
+<footer>
+ <p>內容為教育與試算舉例，非投資建議或報酬保證，實際以銀行審核為準。借貸投資可能造成本金虧損，且仍須償還借款。</p>
+ <p><a href="./">← 回到 Alien 柳皓威｜財務教練</a></p>
+ <p>© 2026 Alien Financial Coach｜@alien_coach</p>
+</footer>
+</main>
+
+<div class="sticky" id="sticky"><a href="https://ig.me/m/alien_coach" target="_blank" rel="noopener">IG 私訊「活化」免費初步試算</a></div>
+
+<script>
+(function(){
+ var $=function(id){return document.getElementById(id)};
+ function fmt(n,d){var f=Math.pow(10,d||0);n=Math.round(n*f)/f;return n.toLocaleString('zh-TW',{maximumFractionDigits:d||0})}
+ function num(el){var v=parseFloat(el.value);return isFinite(v)&&v>=0?v:0}
+ function calc(){
+  var V=num($('iV')),R=Math.min(num($('iR')),100),B=num($('iB')),I=num($('iI'));
+  var L=V*R/100,F=Math.max(L-B,0),C=F*I/100,Y=F*0.10;
+  $('oV').value=fmt(V);$('oR').value=fmt(R,1);$('oL').value=fmt(L,1);$('oB').value=fmt(B,1);$('oF').value=fmt(F,1);
+  $('oI').value=fmt(I,2);$('oC').value=fmt(C,1);$('oM').value=fmt(C*10000/12);$('oY').value=fmt(Y,1);$('oN').value=fmt(Y-C,1);
+ }
+ ['iV','iR','iB','iI'].forEach(function(id){$(id).addEventListener('input',calc)});
+
+ var chk=$('chk'),dots=document.querySelectorAll('.dots i');
+ chk.addEventListener('change',function(){
+  var n=chk.querySelectorAll('input:checked').length;
+  dots.forEach(function(d,i){d.classList.toggle('on',i<n)});
+  $('chkOut').innerHTML='你符合 <b>'+n+' 項</b>'+(n>=3?'，值得進一步評估，可以私訊我做初步試算。':'，可以先把房貸、收入與預備金整理好再評估。');
+ });
+
+ var st=$('sticky'),end=$('cta');
+ if('IntersectionObserver' in window){
+  new IntersectionObserver(function(e){st.classList.toggle('hide',e[0].isIntersecting)}).observe(end);
+ }
+})();
+</script>
+</body>
+</html>
